@@ -115,5 +115,9 @@ if __name__ == '__main__':
     # deklaracja metod
     pyhop.declare_methods('transport', transport_by_truck, transport_by_plane, transport)
 
+    pyhop.print_methods()
+    pyhop.print_operators()
+
     # uruchomienie solvera
-    pyhop.pyhop(state1, [('transport', 'package1', 'loc1', 'loc6'), ('transport', 'package2', 'loc4', 'loc2')])
+    pyhop.pyhop(state1, [('transport', 'package1', 'loc1', 'loc6'), ('transport', 'package2', 'loc4', 'loc2')],
+                verbose=1)
